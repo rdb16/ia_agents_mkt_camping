@@ -1,0 +1,12 @@
+return Task(
+            description=dedent(
+                f"""
+                **Task**: créer un itinéraire détaillé pour un voyage de 7 jours.
+                **Description**:
+                **Parameters**:
+                **Notes**: {self.__tip_section()}
+                """,
+            ),
+            agent=agent,
+            expected_output="Description détaillée de l'itinéraire de 7 jours, incluant des plans quotidiens, hébergements, et activités."
+        )

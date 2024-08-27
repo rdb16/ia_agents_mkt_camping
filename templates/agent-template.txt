@@ -1,0 +1,15 @@
+return Agent(
+            role="Expert en agence de voyage",
+            backstory=dedent(f"""Je suis un expert dans la planification d'itinéraire de voyages,
+                              avec une expérience de plusieurs dizaines d'année"""),
+            goal=dedent(f"""Créer un voyage de 7 jours avec un planing détaillé de
+                         chaque jour, comprenant un budget, des suggestions pour les valises
+                        et des conseils sur la sécurité"""),
+            tools=[
+                SearchTools.search_internet,
+                CalculatorTools.calculate],
+            verbose=True,
+            #allow_delegation=True,
+            max_iter=5,
+            llm=self.OpenAIGPT4,
+        )
