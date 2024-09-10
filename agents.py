@@ -35,8 +35,8 @@ class MarketingAgents:
             role="synthétiser les prévisions météorologiques de la période",
             backstory=dedent(f"""Je suis un expert dans les données météorologiques de la région depuis des années"""),
             goal=dedent(f"""Rechercher sur le web les prévisions météo pour une date lointaine est peu fiable. Aussi
-             tu iras chercher pour la période demandée l'historique des 3 dernières années de la région pour sortir
-             une moyenne de synthèse et si la période est en hiver, la moyenne du bulletin d'enneigement des stations
+             tu iras chercher, pour la période demandée, l'historique des 3 dernières années. Tu feras la moyenne de ces trois dernières et
+            si la période est en hiver, la moyenne du bulletin d'enneigement des stations
             de l'Alpe d'Huez et des  Deux-Alpes pour faire une synthèse"""),
             tools=[
                 SearchTools.search_internet,
